@@ -23,7 +23,7 @@ def valid_phone_numbers(check)
 end
 
 def area_codes(check) 
-  check.scan(/\b{3}\d{3}\b{3}/)
+  # check.scan(/\b{3}\d{3}\b{3}/)
   check.scan(/\b[2-9]{1}\d{0,2}\-\d{0,3}\-\d{4}\b/).uniq.map{|x| x[0..2]}
 end
 
